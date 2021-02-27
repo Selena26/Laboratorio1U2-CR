@@ -1,16 +1,20 @@
 package polimorfismo;
 
 public class Perro extends Animal{
-	 
-	  /**
-	   * @param nombre
-	   */
-	   public Perro(String nombre) {
+	// ---------------------------------------------
+	// ATRIBUTOS 
+	// ---------------------------------------------
+	/**
+	 * @param nombre
+	*/
+	public Perro(String nombre) {
 	   super(nombre);
 	   System.out.println("Constructor perro, nombre : "+nombre);
 	 }
-
-	 public void tipoAnimal() {
+	// ---------------------------------------------
+	// METODOS FUNCIONALES
+	// ---------------------------------------------
+	public void tipoAnimal() {
 	  System.out.println("Tipo Animal : Es un Perro");
 	 }
 	 
