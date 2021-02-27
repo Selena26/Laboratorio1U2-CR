@@ -6,6 +6,7 @@ public class Empleado extends Persona{
 
 	double sueldo;
 	String telefono, direccion;
+	
 	//Constructor
 	public Empleado(String nom, int ed, double suel, String tel, String dir) {
 		
