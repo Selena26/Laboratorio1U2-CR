@@ -9,6 +9,7 @@ public class Encapsulamiento {
 		Alumno alu2=new Alumno();
 		
 		//Datos para Alumno 1
+		
 		System.out.println("--------");
 		alu1.setNoControl(12345);
 		alu1.nombre = "Joan";
@@ -17,6 +18,7 @@ public class Encapsulamiento {
 		alu1.verDatos();
 		
 		//Datos para Alumno 2
+		
 		System.out.println("--------");
 		alu1.setNoControl(12345);
 		alu1.nombre = "Selena";
