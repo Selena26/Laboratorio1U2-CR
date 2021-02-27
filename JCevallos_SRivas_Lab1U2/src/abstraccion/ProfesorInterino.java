@@ -4,10 +4,13 @@ package abstraccion;
 import java.util.Calendar;
 
 public class ProfesorInterino extends Profesor {
-
-    // Campo de la clase 
+	// ---------------------------------------------
+	// ATRIBUTOS 
+	// ---------------------------------------------
 	private Calendar fechaComienzoInterinidad;
-	// Constructores
+	// ---------------------------------------------
+	// CONSTRUCTORES
+	// ---------------------------------------------
     public ProfesorInterino (Calendar fechaInicioInterinidad) {
         super();      
         fechaComienzoInterinidad = fechaInicioInterinidad;
@@ -17,14 +20,22 @@ public class ProfesorInterino extends Profesor {
     	super(nombre, apellidos, edad, id);
         fechaComienzoInterinidad = fechaInicioInterinidad;
         }
+	// ---------------------------------------------
+	// METODO ANALIZADOR 
+	// ---------------------------------------------
     public Calendar getFechaComienzoInterinidad () {
     	return fechaComienzoInterinidad; 
-    	} //Método
-    public String toString () { // Sobreescritura del método
+    	}
+	// ---------------------------------------------
+	// SOBREESCRITURA DEL METODO
+	// ---------------------------------------------
+    public String toString () { 
     	return super.toString().concat (" Fecha comienzo interinidad: ").concat (fechaComienzoInterinidad.getTime().toString());
     	}
+	// ---------------------------------------------
+	// METODO ABSTRACTO SOBREESCRITO
+	// ---------------------------------------------
     public float importeNomina () { 
     	return 30f * 35.60f ; 
-    	} //Método abstracto sobreescrito en esta clase
-
-} //Cierre de la clase
+    	} 
+}

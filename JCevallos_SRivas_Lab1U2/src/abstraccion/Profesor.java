@@ -1,24 +1,36 @@
 package abstraccion;
 
 public abstract class Profesor extends Persona {
+	// ---------------------------------------------
+	// ATRIBUTOS 
+	// ---------------------------------------------
 	private String IdProfesor; 
-	// Constructores
-	
+	// ---------------------------------------------
+	// CONSTRUCTOR SIN PARAMETROS
+	// ---------------------------------------------
 	public Profesor () { 
 		   super();      
 		   IdProfesor = "Unknown"; 
 	}
+	// ---------------------------------------------
+	// CONSTRUCTOR CON PARAMETROS
+	// ---------------------------------------------
 	public Profesor (String nombre, String apellidos, int edad, String id) { 
 	   super(nombre, apellidos, edad);
 	   IdProfesor = id; 
 	}
-	// Métodos
+	// ---------------------------------------------
+	// METODOS ANALIZADORES
+	// ---------------------------------------------
 	public void setIdProfesor (String IdProfesor) {
 		this.IdProfesor = IdProfesor;   
 		}
 	public String getIdProfesor () { 
 		return IdProfesor;   
 		}
+	// ---------------------------------------------
+	// METODO FUNCIONAL
+	// ---------------------------------------------
 	public void mostrarDatos() {
 		System.out.println ("Datos Profesor. Profesor de nombre: " + getNombre() + " " +
 	getApellidos() + " con Id de profesor: " + getIdProfesor() );  
@@ -26,6 +38,9 @@ public abstract class Profesor extends Persona {
 	public String toString () { 
 		return super.toString().concat(" -IdProfesor: ").concat(IdProfesor);
 		}
-	abstract public float importeNomina ();  // Método abstracto
+	// ---------------------------------------------
+	// METODO ABSTRACTO 
+	// ---------------------------------------------
+	abstract public float importeNomina ();  
 
-} //Cierre de la clase
+} 
