@@ -42,5 +42,4 @@ public abstract class Profesor extends Persona {
 	// METODO ABSTRACTO 
 	// ---------------------------------------------
 	abstract public float importeNomina ();  
-
 } 

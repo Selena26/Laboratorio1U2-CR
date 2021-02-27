@@ -38,7 +38,7 @@ public class Persona {
 		return edad;
 	}
 	// ---------------------------------------------
-	// TO STRING
+	// SOBRE ESCRITURA DEL METODO
 	// ---------------------------------------------
 	public String toString() {   
 		Integer datoEdad = edad;

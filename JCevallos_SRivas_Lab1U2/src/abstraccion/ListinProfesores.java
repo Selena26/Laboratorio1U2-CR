@@ -44,8 +44,9 @@ public class ListinProfesores {
         	else { 
         		tmpStr1 = "Titular"; 
         		}
-        	System.out.println("-Tipo de este profesor:"+tmpStr1+" -Nómina de este profesor: "+(tmp.importeNomina())+ "\n");}
-    }
+        	System.out.println("-Tipo de este profesor:"+tmpStr1+" -Nómina de este profesor: "+(tmp.importeNomina())+ "\n");
+        	}
+        }
     /**
      * Importe Nomina Profesorado
      * @return

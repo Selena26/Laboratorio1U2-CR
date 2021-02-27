@@ -13,9 +13,8 @@ public abstract class Animal{
 	  * @param nombre
 	  */
 	 public Animal (String nombre){
-	  this.nombre=nombre;
-	  System.out.println("Constructor Animal, " +
-	    "nombre del animal : "+this.nombre);
+		 this.nombre=nombre;
+		 System.out.println("Constructor Animal, " + "nombre del animal : "+this.nombre);
 	 }
 	// ---------------------------------------------
 	// METODOS ANALIZADORES
